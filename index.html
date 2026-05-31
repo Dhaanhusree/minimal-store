@@ -17,6 +17,14 @@
                 <a href="#" class="nav-link" data-category="office">Office</a>
                 <a href="#" class="nav-link" data-category="tech">Tech</a>
             </div>
+            <div class="search-container">
+                <input 
+                type="text" 
+                id="search-input"
+                placeholder="Search products..."
+                autocomplete="off"/>
+                <span class="search-icon">🔍</span>
+            </div>
             <button id="cart-toggle" class="cart-btn">
                 <span class="cart-icon">🛒</span>
                 <span id="cart-count">0</span>
@@ -49,6 +57,69 @@
         <button id="checkout-btn" class="checkout-btn">Checkout</button>
         </div>
         </aside>
+        <!-- Checkout Modal -->
+<div id="checkout-overlay" class="checkout-overlay hidden"></div>
+<div id="checkout-modal" class="checkout-modal hidden">
+  <div class="checkout-header">
+    <h2>Checkout</h2>
+    <button id="checkout-close" class="close-btn">×</button>
+  </div>
+  
+  <div class="checkout-body">
+    <!-- Order Summary -->
+    <div class="checkout-summary">
+      <h3>Order Summary</h3>
+      <div id="checkout-items"></div>
+      <div class="checkout-total-row">
+        <span>Total:</span>
+        <span id="checkout-total">$0.00</span>
+      </div>
+    </div>
+    
+    <!-- Checkout Form -->
+    <form id="checkout-form">
+      <h3>Shipping Details</h3>
+      
+      <div class="form-group">
+        <label for="name">Full Name</label>
+        <input type="text" id="name" required placeholder="Saraa">
+      </div>
+      
+      <div class="form-group">
+        <label for="email">Email</label>
+        <input type="email" id="email" required placeholder="sara@example.com">
+      </div>
+      
+      <div class="form-group">
+        <label for="address">Address</label>
+        <input type="text" id="address" required placeholder="3rd Main Road">
+      </div>
+      
+      <div class="form-row">
+        <div class="form-group">
+          <label for="city">City</label>
+          <input type="text" id="city" required placeholder="Banglore">
+        </div>
+        <div class="form-group">
+          <label for="zip">ZIP Code</label>
+          <input type="text" id="zip" required placeholder="000000">
+        </div>
+      </div>
+      
+      <button type="submit" class="place-order-btn">Place Order</button>
+    </form>
+  </div>
+</div>
+
+<!-- Success Message -->
+<div id="success-overlay" class="checkout-overlay hidden"></div>
+<div id="success-modal" class="checkout-modal success-modal hidden">
+  <div class="success-icon">✅</div>
+  <h2>Order Placed!</h2>
+  <p>Thank you for your purchase.</p>
+  <p class="order-number">Order #<span id="order-number"></span></p>
+  <button id="success-close" class="continue-shopping-btn">Continue Shopping</button>
+</div>
     <script src="product.js"></script>
     <script src="script.js"></script>
 </body>
