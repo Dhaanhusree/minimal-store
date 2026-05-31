@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Minimal Store</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="#" class="logo">Minimal Store</a>
+            <div class="nav-links">
+                <a href="#" class="nav-link active" data-category="all">All</a>
+                <a href="#" class="nav-link" data-category="home">Home</a>
+                <a href="#" class="nav-link" data-category="kitchen">Kitchen</a>
+                <a href="#" class="nav-link" data-category="office">Office</a>
+                <a href="#" class="nav-link" data-category="tech">Tech</a>
+            </div>
+            <button id="cart-toggle" class="cart-btn">
+                <span class="cart-icon">🛒</span>
+                <span id="cart-count">0</span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Main content -->
+     <main class="main-content">
+        <section id="product-grid" class="product-grid">
+                <!-- Products will be dynamically inserted here via JavaScript -->
+        </section>
+        <section id="product-detail" class="product-detail hidden"></section>
+     </main>
+     <!-- Cart sidebar -->
+      <div id="cart-overlay" class="cart-overlay hidden"></div>
+      <aside id="cart-sidebar" class="cart-sidebar hidden">
+        <div class="cart-header">
+        <h2>Your Cart</h2>
+        <button id="cart-close" class="close-btn">X</button>
+        </div>
+        <div id="cart-items" class="cart-items">
+            <!-- Cart items will be dynamically inserted here via JavaScript -->
+        </div>
+        <div class="cart-footer">
+        <div class="cart-total">
+            <span>Total:</span>
+            <span id="cart-total-price">$0.00</span>
+        </div>
+        <button id="checkout-btn" class="checkout-btn">Checkout</button>
+        </div>
+        </aside>
+    <script src="product.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

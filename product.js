@@ -4,11 +4,11 @@
 const products = [
   {
     id: 1,
-    name: "Minimal Desk Lamp",
+    name: "Abstract Painting",
     price: 49.99,
     category: "home",
-    image: "https://images.unsplash.com/photo-1507473885765-e6ed057ab6fe?w=400&h=400&fit=crop",
-    description: "A clean, adjustable desk lamp with warm LED lighting. Perfect for late-night coding sessions."
+    image: "https://images.unsplash.com/photo-1505691938895-1758d7feb511?w=400&h=400&fit=crop",
+    description: "Vibrant abstract art print. Printed on high-quality canvas. Ready to hang with included hardware."
   },
   {
     id: 2,
@@ -52,11 +52,11 @@ const products = [
   },
   {
     id: 7,
-    name: "Noise-Canceling Earbuds",
+    name: "Laptop",
     price: 89.99,
     category: "tech",
-    image: "https://images.unsplash.com/photo-1590658268037-6bf12f032f46?w=400&h=400&fit=crop",
-    description: "True wireless earbuds with active noise cancellation. 8-hour battery life. IPX5 water resistant."
+    image: "https://images.unsplash.com/photo-1517336714731-489689fd1ca8?w=400&h=400&fit=crop",
+    description: "15-inch laptop with 8GB RAM and 256GB SSD. Perfect for work and entertainment on the go."
   },
   {
     id: 8,
